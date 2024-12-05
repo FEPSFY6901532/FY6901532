@@ -78,7 +78,7 @@
         <td><a href="#introduction">Introduction</td>
       </tr>
       <tr>
-        <td><a href="#analysis and discussion">Analysis and Discussion</td>
+        <td><a href="#analysis_and_discussion">Analysis and Discussion</td>
       </tr>
       <tr>
         <td><a href="#references">References</td>
@@ -114,19 +114,19 @@ document.getElementById("date&time").innerHTML = d;
     </h3>
 
     <p class="ex1">
-      <pre>
+      <pre id="#introduction_text">
         insert introduction here...
       </pre>
     </p>
 
     <hr>
     
-    <h3 id="#analysis and discussion">
+    <h3 id="#analysis_and_discussion">
       Analysis and Discussion
     </h3>
 
     <p class="ex1">
-      <pre>
+      <pre id="analysis_and_discussion_text">
         insert article here...
       </pre>
     </p>
@@ -213,8 +213,8 @@ document.getElementById("date&time").innerHTML = d;
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const IntroductionCount = displayWordCount("#introduction");
-    const AnalysisCount = displayWordCount("#analysis and discussion");
+    const IntroductionCount = displayWordCount("#introduction_text");
+    const AnalysisCount = displayWordCount("#analysis_and_discussion_text");
     // Calculate the sum of all selected sections
     const totalWordCount = IntroductionCount + AnalysisCount;
     // Display the total word count
